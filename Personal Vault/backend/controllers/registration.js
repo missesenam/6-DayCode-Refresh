@@ -6,7 +6,7 @@ require("dotenv").config();
 const crypto = require("crypto");
 const sendEmail = require("../utils/sendEmail");
 
-// SignUp without name, only email + password
+// SignUp
 const signUp = async (req, res) => {
   try {
     const errors = validationResult(req);
